@@ -24,12 +24,18 @@
     url("../fonts/bold.woff") format("woff");
 
 }
+html {
+  height: 100%;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   margin: 0;
   font-family: Poppins, Arial, sans-serif;
   font-weight: 700;
@@ -58,7 +64,9 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+.site {
+  flex-grow: 1;
+}
 .site-header {
   padding: 48px 0;
 }
